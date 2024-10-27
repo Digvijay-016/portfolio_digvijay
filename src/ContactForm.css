@@ -1,0 +1,99 @@
+/* ContactForm.css */
+
+.contact-form {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: linear-gradient(135deg, #e0eaff, #b3d9ff);
+    border-radius: 15px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.contact-form:hover {
+    transform: scale(1.02);
+}
+
+.contact-form h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    color: #003366;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1.2rem;
+    border: 2px solid #cce7ff;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: #003366;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #66b3ff;
+    background-color: #ffffff;
+    outline: none;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 0.9rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #0066cc;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-form button:hover {
+    background-color: #005bb5;
+    transform: scale(1.05);
+}
+
+.contact-form button:active {
+    transform: scale(1);
+}
+
+@media (max-width: 500px) {
+    .contact-form {
+        padding: 1.5rem;
+    }
+}
+
+.thank-you-animation {
+    text-align: center;
+    color: #003366;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.thank-you-animation h2 {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 0.5rem;
+    animation: scaleUp 0.8s ease-in-out;
+}
+
+.thank-you-animation p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes scaleUp {
+    from { transform: scale(0.8); }
+    to { transform: scale(1); }
+}

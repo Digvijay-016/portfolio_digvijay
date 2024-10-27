@@ -1,0 +1,31 @@
+.animated-footer {
+    background: linear-gradient(90deg, #1c1c1c, #333333);
+    color: white;
+    padding: 1.5rem;
+    font-size: 1rem;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in forwards, colorShift 3s infinite alternate;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0px -4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.footer-text {
+    color: #b3b3b3;
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes colorShift {
+    0% { color: #b3b3b3; }
+    100% { color: #ffffff; }
+}
